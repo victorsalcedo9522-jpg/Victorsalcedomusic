@@ -1139,3 +1139,90 @@
     .float-wa:hover { background: #1ebe5a; }
     .float-ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
 
+/* =========================================
+   👑 AWWARDS TIER ADDITIONS (PREMIUM 2026)
+   ========================================= */
+
+/* 1. Custom Cursor */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, input, textarea, select, .btn, .course-slide, .pack-card, .proj-card {
+    cursor: none;
+  }
+  .cursor-dot, .cursor-ring {
+    position: fixed;
+    top: 0; left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    border-radius: 50%;
+  }
+  .cursor-dot {
+    width: 24px;
+    height: 24px;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), color 0.3s;
+  }
+  .cursor-dot svg { width: 100%; height: 100%; transition: transform 0.3s; }
+
+  .cursor-ring {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(212, 90, 28, 0.4);
+    box-shadow: 0 0 20px rgba(212, 90, 28, 0.1);
+    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), height 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s, background-color 0.3s;
+  }
+  
+  /* Hover effects */
+  body.cursor-hover .cursor-dot svg {
+    transform: scale(1.3) rotate(-10deg);
+  }
+  body.cursor-hover .cursor-ring {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(212, 90, 28, 0.08);
+    border-color: var(--accent);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+}
+
+/* 2. Magnetic Buttons Class */
+.magnetic {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+/* 3. Hero Animated Mesh Gradient & 3D Cards */
+#inicio {
+  position: relative;
+  z-index: 1;
+}
+#inicio::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background: 
+    radial-gradient(circle at 15% 50%, rgba(212, 90, 28, 0.05), transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(0, 184, 150, 0.04), transparent 50%);
+  animation: bgRoam 15s ease-in-out infinite alternate;
+}
+@keyframes bgRoam {
+  0% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.1) translateY(3%); }
+  100% { transform: scale(1) translateY(-3%); }
+}
+
+/* 5. Glassmorphism Extra Polish */
+.testi-card, .featured-band {
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

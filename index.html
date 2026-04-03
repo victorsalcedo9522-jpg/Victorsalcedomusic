@@ -75,6 +75,23 @@
 </head>
 <body>
 
+<!-- Custom Cursor Elements -->
+<div class="cursor-dot" id="cursor-dot">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
+    <path d="M6 5v8"></path>
+    <path d="M10 5v8"></path>
+    <path d="M14 5v8"></path>
+    <path d="M18 5v8"></path>
+    <path d="M4 19v-4"></path>
+    <path d="M8 19v-4"></path>
+    <path d="M12 19v-4"></path>
+    <path d="M16 19v-4"></path>
+    <path d="M20 19v-4"></path>
+  </svg>
+</div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
 <!-- ══ NAV ══ -->
 <nav id="navbar">
   <div class="container">
@@ -1013,6 +1030,9 @@
     </a>
   </div>
 </div>
+
+<!-- External Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 
 <script src="main.js?v=4" defer></script>
 </body>
