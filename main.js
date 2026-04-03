@@ -85,7 +85,7 @@
 
     // Enviar email a Formspree para que Victor tenga la lista
     // REEMPLAZA "YOUR_FORM_ID" con tu ID de Formspree (formspree.io)
-    const FORMSPREE_ID = 'YOUR_FORM_ID';
+    const FORMSPREE_ID = 'xvzvbnzz';
     const data = new FormData();
     data.append('nombre', document.getElementById('lmNombre').value);
     data.append('email',  document.getElementById('lmEmail').value);
@@ -103,7 +103,7 @@
 
   // ── Formulario de Contacto — Formspree ──
   // REEMPLAZA "YOUR_CONTACT_FORM_ID" con tu ID de Formspree para contacto
-  const CONTACT_FORMSPREE_ID = 'YOUR_CONTACT_FORM_ID';
+  const CONTACT_FORMSPREE_ID = 'mbdpaedy';
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
