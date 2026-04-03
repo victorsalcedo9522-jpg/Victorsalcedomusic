@@ -835,7 +835,7 @@
         <span class="lm-badge">🔥 Oferta exclusiva para suscriptores</span>
         <h2 class="lm-title">Regístrate y recibe<br/><em>40% de descuento</em><br/>en toda la tienda</h2>
         <p class="lm-sub">Déjame tu nombre y email y te envío tu código de descuento al instante. Válido para todos los cursos y sample packs.</p>
-        <form class="lm-form" id="discountForm" onsubmit="handleDiscount(event)">
+        <form class="lm-form" id="discountForm" action="https://formspree.io/f/xvzvbnzz" method="POST" onsubmit="handleDiscount(event)">
           <input class="lm-input" type="text" name="nombre" id="lmNombre" placeholder="Tu nombre" required />
           <input class="lm-input" type="email" name="email" id="lmEmail" placeholder="Tu mejor email" required />
           <button type="submit" class="lm-btn" id="discountBtn"><i class="fas fa-tag"></i> Quiero mi descuento</button>
@@ -942,9 +942,9 @@
         </div>
 
         <!-- Formulario de contacto -->
-        <form id="contactForm" action="contacto.php" method="POST" style="margin-top:32px;">
-          <input type="hidden" name="tipo" value="contacto" />
-          <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off" /> <!-- honeypot -->
+        <form id="contactForm" action="https://formspree.io/f/mbdpaedy" method="POST" style="margin-top:32px;">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde victorsalcedomusic.com" />
+          <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;">
             <input type="text" name="nombre" placeholder="Tu nombre" required
               style="flex:1;min-width:160px;padding:12px 16px;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.07);color:#fff;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;" />
