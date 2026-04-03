@@ -101,49 +101,13 @@
     }, 600);
   }
 
-  // ── Formulario de Contacto — Formspree ──
-  // REEMPLAZA "YOUR_CONTACT_FORM_ID" con tu ID de Formspree para contacto
-  const CONTACT_FORMSPREE_ID = 'mbdpaedy';
+  // ── Formulario de Contacto — envío nativo a Formspree ──
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
+    contactForm.addEventListener('submit', function() {
       const btn = document.getElementById('contactBtn');
-      const msg = document.getElementById('contactMsg');
       btn.disabled = true;
       btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-
-      fetch('https://formspree.io/f/' + CONTACT_FORMSPREE_ID, {
-        method: 'POST',
-        body: new FormData(contactForm),
-        headers: { 'Accept': 'application/json' }
-      })
-        .then(r => r.json())
-        .then(data => {
-          msg.style.display = 'block';
-          if (data.ok) {
-            msg.style.background = 'rgba(122,158,135,0.15)';
-            msg.style.color = '#7A9E87';
-            msg.style.border = '1px solid rgba(122,158,135,0.3)';
-            msg.innerHTML = '<i class="fas fa-check-circle"></i> ¡Mensaje recibido! Te respondo en menos de 24 horas.';
-            contactForm.reset();
-          } else {
-            msg.style.background = 'rgba(192,104,64,0.15)';
-            msg.style.color = '#C06840';
-            msg.style.border = '1px solid rgba(192,104,64,0.3)';
-            msg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error al enviar. Escríbeme por WhatsApp.';
-          }
-          btn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar mensaje';
-          btn.disabled = false;
-        })
-        .catch(() => {
-          msg.style.display = 'block';
-          msg.style.background = 'rgba(192,104,64,0.15)';
-          msg.style.color = '#C06840';
-          msg.style.border = '1px solid rgba(192,104,64,0.3)';
-          msg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error de conexión. Escríbeme por WhatsApp.';
-          btn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar mensaje';
-          btn.disabled = false;
-        });
+      // El formulario se envía nativamente a Formspree y redirige de vuelta al sitio
     });
   }
