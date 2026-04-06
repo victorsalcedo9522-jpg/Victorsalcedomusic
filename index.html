@@ -91,6 +91,7 @@
         <li><a href="#cursos" style="display:flex;align-items:center;gap:6px;">Cursos <span style="background:var(--accent);color:#fff;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;padding:2px 7px;border-radius:100px;text-transform:uppercase;">Nuevo</span></a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#patreon" style="display:flex;align-items:center;gap:6px;">Patreon <span style="background:linear-gradient(135deg,#FF424D,#E6461A);color:#fff;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;padding:2px 7px;border-radius:100px;text-transform:uppercase;">Gold</span></a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
       <div class="nav-right">
@@ -112,6 +113,7 @@
     <li><a href="#cursos" onclick="toggleMenu()">Cursos</a></li>
     <li><a href="#servicios" onclick="toggleMenu()">Servicios</a></li>
     <li><a href="#portafolio" onclick="toggleMenu()">Portafolio</a></li>
+    <li><a href="#patreon" onclick="toggleMenu()">🌟 Patreon Gold</a></li>
     <li><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
   </ul>
   <a href="https://wa.me/message/TJF6KXFUITQOL1" target="_blank" class="btn btn-accent" style="width:100%;justify-content:center;">
@@ -583,6 +585,72 @@
   </div>
 </section>
 
+<!-- ══ PATREON ══ -->
+<section id="patreon">
+  <div class="container">
+    <div class="patreon-wrap fade-up">
+
+      <!-- Left: copy -->
+      <div class="patreon-left">
+        <div class="patreon-eyebrow">
+          <span class="patreon-logo-pill"><i class="fab fa-patreon"></i> Patreon</span>
+          <div class="label" style="margin:0;">Membresía Exclusiva</div>
+        </div>
+        <h2 class="h2" style="margin-bottom:16px;color:#fff;">Lleva tu armonía al<br/><em style="color:#FFD580;">siguiente nivel</em></h2>
+        <p style="color:rgba(255,255,255,0.65);font-size:1rem;line-height:1.75;max-width:480px;margin-bottom:32px;">
+          Accede a contenido que no encontrarás en ningún otro lugar: masterclasses en vivo, transcripciones, ejercicios melódicos y armónicos, y una comunidad de músicos que piensan como tú.
+        </p>
+        <div class="patreon-benefits-grid">
+          <div class="patreon-benefit"><i class="fas fa-music"></i> Armonía funcional avanzada</div>
+          <div class="patreon-benefit"><i class="fas fa-file-alt"></i> Transcripción de canciones</div>
+          <div class="patreon-benefit"><i class="fas fa-dumbbell"></i> Ejercicios melódicos y armónicos</div>
+          <div class="patreon-benefit"><i class="fas fa-video"></i> Masterclasses y videos en vivo</div>
+          <div class="patreon-benefit"><i class="fas fa-users"></i> Comunidad privada de músicos</div>
+          <div class="patreon-benefit"><i class="fas fa-download"></i> Recursos y descargas exclusivas</div>
+        </div>
+        <div class="patreon-btns">
+          <a href="https://www.patreon.com/VictorSalcedoMusic" target="_blank" class="btn-patreon-gold">
+            <i class="fab fa-patreon"></i> Únete al Gold · $29.99/mes
+          </a>
+          <a href="https://www.patreon.com/VictorSalcedoMusic" target="_blank" class="btn-patreon-free">
+            Seguir gratis <i class="fas fa-arrow-right" style="font-size:0.78rem;"></i>
+          </a>
+        </div>
+        <p class="patreon-note"><i class="fas fa-lock"></i> Cancela cuando quieras · Sin permanencia</p>
+      </div>
+
+      <!-- Right: card -->
+      <div class="patreon-card-wrap">
+        <div class="patreon-card">
+          <div class="patreon-card-header">
+            <span class="patreon-star">🌟</span>
+            <div class="patreon-card-tier">Gold</div>
+            <div class="patreon-card-price">$29.99<span>/mes</span></div>
+          </div>
+          <ul class="patreon-card-list">
+            <li><i class="fas fa-check"></i> Contenido exclusivo de armonía</li>
+            <li><i class="fas fa-check"></i> Transcripción de canciones</li>
+            <li><i class="fas fa-check"></i> Ejercicios melódicos y armónicos</li>
+            <li><i class="fas fa-check"></i> Acceso a la comunidad</li>
+            <li><i class="fas fa-check"></i> Masterclasses y videos en vivo</li>
+            <li><i class="fas fa-check"></i> 32 publicaciones disponibles ya</li>
+          </ul>
+          <a href="https://www.patreon.com/VictorSalcedoMusic" target="_blank" class="btn-patreon-gold" style="width:100%;justify-content:center;">
+            Súmate ahora
+          </a>
+          <div style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.12);">
+            <a href="https://www.patreon.com/VictorSalcedoMusic" target="_blank" class="btn-patreon-free" style="width:100%;justify-content:center;">
+              <i class="fab fa-patreon"></i> También puedes seguirme gratis
+            </a>
+          </div>
+        </div>
+        <div class="patreon-glow"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ══ FOTO STRIP ══ -->
 <div class="photo-strip">
   <img src="foto-victor-3.jpg" alt="Víctor Salcedo en vivo" loading="lazy" width="1800" height="1200"
@@ -871,10 +939,10 @@
       <h2 class="h2">Sígueme en Redes</h2>
       <p class="sub">Una comunidad de músicos, pianistas y productores en constante crecimiento.</p>
     </div>
-    <div class="redes-grid fade-up">
+    <div class="redes-grid redes-grid-5 fade-up">
       <a href="https://www.instagram.com/victorsalcedomusic/" target="_blank" class="red-card">
         <div class="red-icon" style="color:#E1306C;"><i class="fab fa-instagram"></i></div>
-        <div class="red-count">74.1K</div>
+        <div class="red-count">74.5K</div>
         <div class="red-name">Instagram</div>
         <div class="red-handle">@victorsalcedomusic</div>
       </a>
@@ -895,6 +963,12 @@
         <div class="red-count">16.6K</div>
         <div class="red-name">Threads</div>
         <div class="red-handle">@victosalcedomusic</div>
+      </a>
+      <a href="https://www.patreon.com/VictorSalcedoMusic" target="_blank" class="red-card red-card-patreon">
+        <div class="red-icon"><i class="fab fa-patreon"></i></div>
+        <div class="red-count">🌟 Gold</div>
+        <div class="red-name">Patreon</div>
+        <div class="red-handle">$29.99/mes</div>
       </a>
     </div>
 
@@ -994,6 +1068,7 @@
         <a href="#servicios">Servicios</a>
         <a href="#portafolio">Portafolio</a>
         <a href="https://victorsalcedo.gumroad.com/" target="_blank">Gumroad</a>
+        <a href="https://www.patreon.com/VictorSalcedoMusic" target="_blank" style="color:var(--accent);">🌟 Patreon</a>
       </div>
       <div class="footer-socials">
         <a href="https://www.instagram.com/victorsalcedomusic/" target="_blank" class="fsoc" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -1001,6 +1076,7 @@
         <a href="https://www.facebook.com/InfinitoMusicPro" target="_blank" class="fsoc" title="Facebook"><i class="fab fa-facebook"></i></a>
         <a href="https://wa.me/message/TJF6KXFUITQOL1" target="_blank" class="fsoc" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         <a href="https://victorsalcedo.gumroad.com/" target="_blank" class="fsoc" title="Gumroad"><i class="fas fa-store"></i></a>
+        <a href="https://www.patreon.com/VictorSalcedoMusic" target="_blank" class="fsoc fsoc-patreon" title="Patreon"><i class="fab fa-patreon"></i></a>
       </div>
     </div>
     <div class="footer-copy">
